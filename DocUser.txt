@@ -1,0 +1,171 @@
+# Manual de Usuario - Sistema de Gestión de Notas de Alumnos
+
+## 1. Introducción
+
+El **Sistema de Gestión de Notas de Alumnos** es una aplicación de escritorio desarrollada en Java que permite gestionar información de estudiantes, materias y calificaciones, así como generar reportes de promedios.
+
+## 2. Requisitos del Sistema
+
+- **Sistema Operativo:** Windows, macOS o Linux
+- **Java:** Versión 8 o superior
+- **Memoria RAM:** Mínimo 2 GB recomendados
+
+## 3. Instalación y Ejecución
+
+1. Asegúrese de tener Java instalado en su computadora
+2. Descargue el archivo JAR ejecutable del sistema
+3. Ejecute el siguiente comando en la terminal o haga doble clic sobre el archivo:
+   ```
+   java -jar SistemaGestionNotas.jar
+   ```
+
+## 4. Descripción de la Interfaz
+
+La aplicación cuenta con una interfaz organizada en pestañas:
+
+### 4.1 Pestaña "Alumnos"
+- **Gestión de información personal de estudiantes**
+- Campos: ID, Nombre, Apellido, Edad
+- Botones: "Agregar Alumno", "Listar Alumnos"
+- Tabla para visualizar todos los alumnos registrados
+
+### 4.2 Pestaña "Materias"
+- **Gestión de asignaturas académicas**
+- Campos: Código, Nombre, Descripción
+- Botones: "Agregar Materia", "Listar Materias"
+- Tabla para visualizar todas las materias registradas
+
+### 4.3 Pestaña "Calificaciones"
+- **Registro de notas de estudiantes**
+- Selectores: Alumno, Materia
+- Campos: Nota (0-10), Período
+- Botones: "Agregar Calificación", "Listar Calificaciones"
+- Tabla para visualizar todas las calificaciones registradas
+
+### 4.4 Pestaña "Reportes"
+- **Generación de informes académicos**
+- Botones: "Promedio por Alumno", "Promedio por Materia"
+- Área de texto para visualizar los reportes generados
+
+## 5. Instrucciones de Uso
+
+### 5.1 Gestión de Alumnos
+
+**Para agregar un nuevo alumno:**
+1. Navegue a la pestaña "Alumnos"
+2. Complete todos los campos obligatorios:
+   - ID Alumno (identificador único)
+   - Nombre
+   - Apellido
+   - Edad (número positivo)
+3. Haga clic en "Agregar Alumno"
+4. Confirme que aparezca el mensaje de éxito
+
+**Para ver todos los alumnos:**
+- Haga clic en "Listar Alumnos" para actualizar la tabla
+
+### 5.2 Gestión de Materias
+
+**Para agregar una nueva materia:**
+1. Navegue a la pestaña "Materias"
+2. Complete los campos obligatorios:
+   - Código Materia (identificador único)
+   - Nombre
+   - Descripción (opcional)
+3. Haga clic en "Agregar Materia"
+4. Confirme que aparezca el mensaje de éxito
+
+**Para ver todas las materias:**
+- Haga clic en "Listar Materias" para actualizar la tabla
+
+### 5.3 Gestión de Calificaciones
+
+**Para registrar una calificación:**
+1. Navegue a la pestaña "Calificaciones"
+2. Seleccione un alumno del menú desplegable
+3. Seleccione una materia del menú desplegable
+4. Ingrese la nota (valor entre 0 y 10)
+5. Ingrese el período (número positivo)
+6. Haga clic en "Agregar Calificación"
+7. Confirme que aparezca el mensaje de éxito
+
+**Nota:** Los menús desplegables se actualizan automáticamente con los alumnos y materias registrados.
+
+### 5.4 Generación de Reportes
+
+**Para generar reporte de promedios por alumno:**
+1. Navegue a la pestaña "Reportes"
+2. Haga clic en "Promedio por Alumno"
+3. El sistema mostrará:
+   - Nombre completo del alumno
+   - ID
+   - Promedio general
+   - Lista detallada de calificaciones por materia
+
+**Para generar reporte de promedios por materia:**
+1. Navegue a la pestaña "Reportes"
+2. Haga clic en "Promedio por Materia"
+3. El sistema mostrará:
+   - Nombre de la materia
+   - Código
+   - Promedio general
+   - Lista de calificaciones individuales por alumno
+
+## 6. Validaciones del Sistema
+
+El sistema incluye las siguientes validaciones:
+
+### Alumnos:
+- Todos los campos son obligatorios
+- La edad debe ser un número positivo
+- El ID debe ser único
+
+### Materias:
+- Código y nombre son obligatorios
+- El código debe ser único
+
+### Calificaciones:
+- Debe seleccionar alumno y materia
+- La nota debe estar entre 0 y 10
+- El período debe ser un número positivo
+
+## 7. Mensajes del Sistema
+
+### Mensajes de Éxito:
+- "Alumno agregado exitosamente"
+- "Materia agregada exitosamente"
+- "Calificación agregada exitosamente"
+
+### Mensajes de Error:
+- "Todos los campos son obligatorios"
+- "La edad debe ser un número positivo"
+- "La nota debe estar entre 0 y 10"
+- "Debe seleccionar un alumno y una materia"
+
+## 8. Consejos de Uso
+
+1. **Registre primero** los alumnos y materias antes de agregar calificaciones
+2. **Utilice IDs únicos** para evitar duplicados
+3. **Verifique los promedios** regularmente usando los reportes
+4. **Mantenga actualizada** la información de alumnos y materias
+
+## 9. Solución de Problemas
+
+**Problema:** No puedo seleccionar alumno/materia en calificaciones
+**Solución:** Asegúrese de haber registrado al menos un alumno y una materia
+
+**Problema:** Los reportes no muestran información
+**Solución:** Verifique que haya registrado calificaciones para los alumnos
+
+**Problema:** La aplicación no inicia
+**Solución:** Confirme que tiene Java instalado y la versión correcta
+
+## 10. Soporte
+
+Para reportar problemas o solicitar asistencia, contacte al administrador del sistema o al departamento de soporte técnico.
+
+---
+
+**Versión del Manual:** 1.0  
+**Fecha de Actualización:** [Fecha actual]  
+**Compatibilidad:** Sistema de Gestión de Notas v1.0
